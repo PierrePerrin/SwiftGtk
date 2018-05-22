@@ -6,7 +6,7 @@ import CGtk
 
 open class Widget {
     private var signals: [(UInt, Any)] = []
-    var widgetPointer: UnsafeMutablePointer<GtkWidget>?
+    public var widgetPointer: UnsafeMutablePointer<GtkWidget>?
 
     public weak var parentWidget: Widget? {
         willSet {
@@ -154,5 +154,11 @@ open class Widget {
         set {
             gtk_widget_set_opacity(widgetPointer, newValue)
         }
+    }
+    
+    public func setBackgroundColor(forState state: GtkStateFlags = GTK_STATE_FLAG_NORMAL ,color:Color!){
+        
+        var gcolor : GdkRGBA = color.gdkRGBA
+        gtk_widget_override_background_color(widgetPointer, GTK_STATE_FLAG_NORMAL, &gcolor)
     }
 }
