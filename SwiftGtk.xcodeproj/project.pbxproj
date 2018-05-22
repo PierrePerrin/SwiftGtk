@@ -49,9 +49,9 @@
 		C3AEBB9E1E3E1A58009284CC /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */; };
 		C3AEBBA21E3E1EF0009284CC /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBBA11E3E1EF0009284CC /* Orientation.swift */; };
 		C3F7E1C21F4B5BEF007EFCD4 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */; };
-		F9D92B7C20B4BBCE0096206E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B7B20B4BBCE0096206E /* Color.swift */; };
 		F9D92B7E20B4BE1B0096206E /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B7D20B4BE1B0096206E /* Zone.swift */; };
 		F9D92B8020B4C2FF0096206E /* Shape.png in Copy Files */ = {isa = PBXBuildFile; fileRef = F9D92B7F20B4C2D10096206E /* Shape.png */; };
+		F9D92B8220B4C84F0096206E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8120B4C84F0096206E /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,9 +134,9 @@
 		C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		C3AEBBA11E3E1EF0009284CC /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
-		F9D92B7B20B4BBCE0096206E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "Ancillary Files/Color.swift"; sourceTree = "<group>"; };
 		F9D92B7D20B4BE1B0096206E /* Zone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
 		F9D92B7F20B4C2D10096206E /* Shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shape.png; sourceTree = "<group>"; };
+		F9D92B8120B4C84F0096206E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +260,7 @@
 			children = (
 				C39D0BA61E3CD7F100DFF948 /* Extensions */,
 				78E1641C1B405CF6008A7CEC /* Application.swift */,
-				F9D92B7B20B4BBCE0096206E /* Color.swift */,
+				F9D92B8120B4C84F0096206E /* Color.swift */,
 				78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */,
 				78E1641E1B405CF6008A7CEC /* Bin.swift */,
 				78E1641F1B405CF6008A7CEC /* Box.swift */,
@@ -484,6 +484,7 @@
 				78FDFF061C3C7B8200A0859B /* Calendar.swift in Sources */,
 				C3AEBB9C1E3E144B009284CC /* BaselinePosition.swift in Sources */,
 				78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */,
+				F9D92B8220B4C84F0096206E /* Color.swift in Sources */,
 				F9D92B7E20B4BE1B0096206E /* Zone.swift in Sources */,
 				C3AEBB971E3E103A009284CC /* Grid.swift in Sources */,
 				78FDFF081C3C80D400A0859B /* Value.swift in Sources */,
@@ -493,7 +494,6 @@
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
 				78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */,
 				78E1642B1B405CF6008A7CEC /* Box.swift in Sources */,
-				F9D92B7C20B4BBCE0096206E /* Color.swift in Sources */,
 				C3AC0AFB1F4B6143000A7755 /* UnsafePointerGChar+ToString.swift in Sources */,
 				78E1642E1B405CF6008A7CEC /* Container.swift in Sources */,
 				78E1642A1B405CF6008A7CEC /* Bin.swift in Sources */,

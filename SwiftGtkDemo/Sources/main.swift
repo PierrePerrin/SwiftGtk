@@ -10,10 +10,12 @@ app.run { window in
     
     window.title = "Hello World"
     window.defaultSize = Size(width: 1920, height: 1080)
+    
     window.resizable = true
     let color = Color(red:0.1,green:0.1,blue:0.1,alpha:1)
     
     window.setBackgroundColor(color:color )
+    window.setFullScreen()
 
     let zone = Zone.init()
    

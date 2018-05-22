@@ -58,6 +58,12 @@ public class Window: Bin {
             gtk_window_set_resizable(castedPointer(), newValue.toGBoolean())
         }
     }
+    
+    public func setFullScreen(){
+        
+        gtk_window_fullscreen(self.castedPointer())
+        self.hideTitlebarWhenMaximized = true
+    }
 
     public var hideTitlebarWhenMaximized: Bool {
         get { return gtk_window_get_hide_titlebar_when_maximized(castedPointer()).toBool() }
