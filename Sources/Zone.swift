@@ -8,21 +8,6 @@
 
 import CGtk
 
-public struct Position{
-    
-    let x : Int
-    let y : Int
-    
-    public init(x:Int,y:Int) {
-        self.x = x
-        self.y = y
-    }
-    
-    static let zero : Position = {
-        return Position.init(x: 0, y: 0)
-    }()
-}
-
 open class Zone: Container {
 
     public override init() {

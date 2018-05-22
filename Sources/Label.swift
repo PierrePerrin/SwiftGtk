@@ -35,4 +35,19 @@ public class Label: Widget {
             gtk_label_set_selectable(castedPointer(), newValue ? 1 : 0)
         }
     }
+    
+    public func setFont(withName name :String){
+    
+        let fontDesc = pango_font_description_from_string(name)
+        gtk_widget_modify_font(widgetPointer, fontDesc)
+    }
+    
+    public var textColor : Color{
+        set{
+            tintColor = newValue
+        }get{
+            return tintColor
+        }
+    }
+    
 }

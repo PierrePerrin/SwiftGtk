@@ -7,6 +7,9 @@ import CGtk
 open class Widget {
     private var signals: [(UInt, Any)] = []
     public var widgetPointer: UnsafeMutablePointer<GtkWidget>?
+    
+    private var _backgroundColor : Color = .clear
+    private var _forgroundColor : Color = .white
 
     public weak var parentWidget: Widget? {
         willSet {
@@ -156,9 +159,22 @@ open class Widget {
         }
     }
     
-    public func setBackgroundColor(forState state: GtkStateFlags = GTK_STATE_FLAG_NORMAL ,color:Color!){
-        
-        var gcolor : GdkRGBA = color.gdkRGBA
-        gtk_widget_override_background_color(widgetPointer, GTK_STATE_FLAG_NORMAL, &gcolor)
+    public var backgroundColor : Color{
+        set{
+            var gcolor : GdkRGBA = newValue.gdkRGBA
+            gtk_widget_override_background_color(widgetPointer, GTK_STATE_FLAG_NORMAL, &gcolor)
+        }get{
+            return _backgroundColor
+        }
+    }
+    
+    
+    public var tintColor : Color{
+        set{
+            var gcolor : GdkRGBA = newValue.gdkRGBA
+            gtk_widget_override_color(widgetPointer, GTK_STATE_FLAG_NORMAL, &gcolor)
+        }get{
+            return _forgroundColor
+        }
     }
 }
