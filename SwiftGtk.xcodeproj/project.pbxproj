@@ -54,7 +54,7 @@
 		F9D92B8220B4C84F0096206E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8120B4C84F0096206E /* Color.swift */; };
 		F9D92B8420B4D0E70096206E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8320B4D0E70096206E /* Position.swift */; };
 		F9F4EFE620B6163400F37484 /* SGFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFE520B6163400F37484 /* SGFileManager.swift */; };
-		F9F4EFEA20B61C0A00F37484 /* PBTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */; };
+		F9F4EFEE20B6267C00F37484 /* PBTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,7 +142,7 @@
 		F9D92B8120B4C84F0096206E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F9D92B8320B4D0E70096206E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		F9F4EFE520B6163400F37484 /* SGFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFileManager.swift; sourceTree = "<group>"; };
-		F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTimeManager.swift; sourceTree = "<group>"; };
+		F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +237,7 @@
 			children = (
 				78F979A41C583D2B00DF6D1D /* Resources */,
 				78E163FB1B405BB3008A7CEC /* main.swift */,
-				F9F4EFE720B61BDA00F37484 /* Model */,
+				F9F4EFEC20B6267000F37484 /* Model */,
 			);
 			name = SwiftGtkDemo;
 			path = SwiftGtkDemo/Sources;
@@ -343,12 +343,12 @@
 			name = FileManagement;
 			sourceTree = "<group>";
 		};
-		F9F4EFE720B61BDA00F37484 /* Model */ = {
+		F9F4EFEC20B6267000F37484 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */,
+				F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */,
 			);
-			path = Model;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,7 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F4EFEA20B61C0A00F37484 /* PBTimeManager.swift in Sources */,
+				F9F4EFEE20B6267C00F37484 /* PBTimeManager.swift in Sources */,
 				78E163FC1B405BB3008A7CEC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
