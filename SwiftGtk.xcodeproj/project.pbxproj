@@ -53,6 +53,8 @@
 		F9D92B8020B4C2FF0096206E /* Shape.png in Copy Files */ = {isa = PBXBuildFile; fileRef = F9D92B7F20B4C2D10096206E /* Shape.png */; };
 		F9D92B8220B4C84F0096206E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8120B4C84F0096206E /* Color.swift */; };
 		F9D92B8420B4D0E70096206E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8320B4D0E70096206E /* Position.swift */; };
+		F9F4EFE620B6163400F37484 /* SGFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFE520B6163400F37484 /* SGFileManager.swift */; };
+		F9F4EFEA20B61C0A00F37484 /* PBTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		F9D92B7F20B4C2D10096206E /* Shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shape.png; sourceTree = "<group>"; };
 		F9D92B8120B4C84F0096206E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F9D92B8320B4D0E70096206E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		F9F4EFE520B6163400F37484 /* SGFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFileManager.swift; sourceTree = "<group>"; };
+		F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 			children = (
 				C35A25E21F3FC1DE00EF1048 /* Ancillary Files */,
 				C3AEBB981E3E13BB009284CC /* Enums */,
+				F9F4EFE420B6161D00F37484 /* FileManagement */,
 				C3AC0AFC1F4B614C000A7755 /* Extensions */,
 				78E164181B405C44008A7CEC /* Libraries */,
 				78E164451B407BBB008A7CEC /* Widgets */,
@@ -232,6 +237,7 @@
 			children = (
 				78F979A41C583D2B00DF6D1D /* Resources */,
 				78E163FB1B405BB3008A7CEC /* main.swift */,
+				F9F4EFE720B61BDA00F37484 /* Model */,
 			);
 			name = SwiftGtkDemo;
 			path = SwiftGtkDemo/Sources;
@@ -327,6 +333,22 @@
 				C3AEBBA11E3E1EF0009284CC /* Orientation.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		F9F4EFE420B6161D00F37484 /* FileManagement */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4EFE520B6163400F37484 /* SGFileManager.swift */,
+			);
+			name = FileManagement;
+			sourceTree = "<group>";
+		};
+		F9F4EFE720B61BDA00F37484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4EFE820B61BF400F37484 /* PBTimeManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +515,7 @@
 				C3AEBB971E3E103A009284CC /* Grid.swift in Sources */,
 				78FDFF081C3C80D400A0859B /* Value.swift in Sources */,
 				78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */,
+				F9F4EFE620B6163400F37484 /* SGFileManager.swift in Sources */,
 				C3F7E1C21F4B5BEF007EFCD4 /* HeaderBar.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
@@ -521,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F4EFEA20B61C0A00F37484 /* PBTimeManager.swift in Sources */,
 				78E163FC1B405BB3008A7CEC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

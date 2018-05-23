@@ -18,6 +18,10 @@ public class Window: Bin {
             }
         }
     }
+    
+    public func update(){
+        gtk_main_iteration()
+    }
 
     public init(windowType: WindowType = .topLevel) {
         super.init()

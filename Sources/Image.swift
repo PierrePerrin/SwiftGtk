@@ -8,8 +8,13 @@ public class Image: Widget {
     
     private let filename : String
     
-    public init(filename: String) {
-        self.filename = filename
+    public convenience init(filePath:String) {
+        self.init(filename: filePath, ByAddingRessourcePath:false)
+    }
+    
+    public init(filename: String, ByAddingRessourcePath addRP: Bool = true) {
+        let ressourcePath =  addRP ? SGFileManager.ressourceDirectory : ""
+        self.filename = ressourcePath + filename
         super.init()
 
         let pixelBuf = gdk_pixbuf_new_from_file(filename, nil)
