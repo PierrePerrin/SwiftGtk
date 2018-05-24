@@ -42,6 +42,17 @@ public class Label: Widget {
         gtk_widget_modify_font(widgetPointer, fontDesc)
     }
     
+    public func setTextAlignment(x:Float? = nil ,y:Float? = nil){
+        
+        if let x = x{
+             gtk_label_set_xalign(castedPointer(), x)
+        }
+        if let y = y{
+            gtk_label_set_yalign(castedPointer(), y)
+        }
+        
+    }
+    
     public var textColor : Color{
         set{
             tintColor = newValue

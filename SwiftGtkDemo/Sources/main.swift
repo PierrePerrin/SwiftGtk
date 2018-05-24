@@ -6,38 +6,38 @@ import Foundation
 import SwiftGtk
 import CGtk
 
+SGFileManager.ressourceDirectory = NSHomeDirectory() + "/Desktop/monPBRessources/"
 let app = Application(applicationId: "com.pierre.perrin.monpaperboard")
 app.run { window in
     
-    SGFileManager.ressourceDirectory = NSHomeDirectory() + "/Desktop/monPBRessources/"
+    PBWeatherManager.default.update()
     
-    window.title = "Hello World"
-    window.defaultSize = Size(width: 1920/2 , height: 1080/2)
-    
-    window.resizable = true
-    let color = Color(red:0.1,green:0.1,blue:0.1,alpha:1)
-    
-    window.backgroundColor = color
-    window.setFullScreen()
-
-    let zone = Zone.init()
-   
-    let image = Image.init(filename: "Shape.png")
-    zone.add(image, atPosition: Position.init(x: 50, y: 50))
-    
-    let label = Label.init(text: "Hello")
-    label.setFont(withName: "Avenir 48")
- 
-    if #available(OSX 10.12, *) {
-        Timer.scheduledTimer(withTimeInterval: 1/60, repeats: true, block: { (timer) in
-            label.text = String(Date().timeIntervalSince1970)
-            window.update()
-        })
+    func prepareWindow(){
+        
+        let width = 1920/2
+        let height = 1080/2
+        window.defaultSize = Size(width: width, height: height)
+        window.resizable = true
+        let color = Color(red:0.1,green:0.1,blue:0.1,alpha:1)
+        window.backgroundColor = color
     }
-    label.tintColor = Color.init(red: 1, green: 1, blue: 1)
+    prepareWindow()
     
-    zone.add(label, atPosition: Position.init(x: 50, y: 200))
+    var mainGrid : Grid!
+    func addMainGrid(){
+        mainGrid = Grid.init()
+        window.add(mainGrid)
+    }
+    addMainGrid()
+    
+    func addTimeAndDate(){
+        
+        let timeAndDateView = PBTimeAndDateView.init()
+        timeAndDateView.grid.backgroundColor = Color.init(red: 1, green: 0, blue: 0)
+        timeAndDateView.startUpdating()
+        mainGrid.attach(child: timeAndDateView.grid, left: 10, top: 1, width: 1, height: 1)
+    }
+    addTimeAndDate()
     
     
-    window.add(zone)
 }

@@ -11,4 +11,3 @@ import Foundation
 public final class SGFileManager{
     public static var ressourceDirectory = ""
 }
-

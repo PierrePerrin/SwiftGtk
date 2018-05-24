@@ -8,7 +8,7 @@ import CGtk
 /// Children are added using `attach(child:left:top:width:height:)`. They can span multiple rows or columns. It is also possible to add a child next to an existing child, using `attach(nextTo:sibling:side:width:height:)`. The behaviour of Grid when several children occupy the same grid cell is undefined.
 /// Grid can be used like a Box by just using `add(_:)`, which will place children next to each other in the direction determined by the "orientation" property.
 public class Grid: Container {
-    override init() {
+    override public init() {
         super.init()
 
         widgetPointer = gtk_grid_new()

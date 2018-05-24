@@ -19,6 +19,10 @@ public class Window: Bin {
         }
     }
     
+    public class func update(){
+        gtk_main_iteration()
+    }
+    
     public func update(){
         gtk_main_iteration()
     }

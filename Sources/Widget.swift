@@ -177,4 +177,18 @@ open class Widget {
             return _forgroundColor
         }
     }
+    
+    public var size : Size{
+        set{
+            gtk_widget_set_size_request(self.widgetPointer,
+                                        gint(newValue.width),
+                                        gint(newValue.height))
+        }
+        get{
+            var width: gint = 0
+            var height: gint = 0
+            gtk_widget_get_size_request(self.widgetPointer, &width, &height)
+            return Size.init(width: Int(width), height: Int(height))
+        }
+    }
 }

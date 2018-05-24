@@ -55,6 +55,11 @@
 		F9D92B8420B4D0E70096206E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D92B8320B4D0E70096206E /* Position.swift */; };
 		F9F4EFE620B6163400F37484 /* SGFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFE520B6163400F37484 /* SGFileManager.swift */; };
 		F9F4EFEE20B6267C00F37484 /* PBTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */; };
+		F9F4EFF020B7504B00F37484 /* PBTimeAndDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFEF20B7504B00F37484 /* PBTimeAndDate.swift */; };
+		F9F4EFF220B7586D00F37484 /* TextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFF120B7586D00F37484 /* TextAlignment.swift */; };
+		F9F4EFF620B75DD900F37484 /* PBWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFF520B75DD900F37484 /* PBWeatherManager.swift */; };
+		F9F4EFF920B75E8D00F37484 /* PBRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFF820B75E8D00F37484 /* PBRequestManager.swift */; };
+		F9F4EFFB20B7658B00F37484 /* PbWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4EFFA20B7658B00F37484 /* PbWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +148,11 @@
 		F9D92B8320B4D0E70096206E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		F9F4EFE520B6163400F37484 /* SGFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFileManager.swift; sourceTree = "<group>"; };
 		F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTimeManager.swift; sourceTree = "<group>"; };
+		F9F4EFEF20B7504B00F37484 /* PBTimeAndDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTimeAndDate.swift; sourceTree = "<group>"; };
+		F9F4EFF120B7586D00F37484 /* TextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignment.swift; sourceTree = "<group>"; };
+		F9F4EFF520B75DD900F37484 /* PBWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBWeatherManager.swift; sourceTree = "<group>"; };
+		F9F4EFF820B75E8D00F37484 /* PBRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBRequestManager.swift; sourceTree = "<group>"; };
+		F9F4EFFA20B7658B00F37484 /* PbWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PbWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +291,7 @@
 				C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */,
 				78FDFF0E1C3C87AF00A0859B /* Image.swift */,
 				78E1644A1B409078008A7CEC /* Label.swift */,
+				F9F4EFF120B7586D00F37484 /* TextAlignment.swift */,
 				F9D92B8320B4D0E70096206E /* Position.swift */,
 				78FDFEFD1C3C3D0100A0859B /* TextView.swift */,
 				C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */,
@@ -346,9 +357,29 @@
 		F9F4EFEC20B6267000F37484 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9F4EFF720B75E7800F37484 /* Network */,
+				F9F4EFF320B75DC500F37484 /* Weather */,
 				F9F4EFED20B6267B00F37484 /* PBTimeManager.swift */,
+				F9F4EFEF20B7504B00F37484 /* PBTimeAndDate.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		F9F4EFF320B75DC500F37484 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4EFF520B75DD900F37484 /* PBWeatherManager.swift */,
+				F9F4EFFA20B7658B00F37484 /* PbWeather.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		F9F4EFF720B75E7800F37484 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4EFF820B75E8D00F37484 /* PBRequestManager.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,6 +560,7 @@
 				C39D0BA81E3CD80200DFF948 /* Widget+CastedPointer.swift in Sources */,
 				784588991C3B1D2D00FB615A /* Size.swift in Sources */,
 				78E164281B405CF6008A7CEC /* Application.swift in Sources */,
+				F9F4EFF220B7586D00F37484 /* TextAlignment.swift in Sources */,
 				78E164331B405CF6008A7CEC /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +576,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F4EFF920B75E8D00F37484 /* PBRequestManager.swift in Sources */,
 				F9F4EFEE20B6267C00F37484 /* PBTimeManager.swift in Sources */,
+				F9F4EFF020B7504B00F37484 /* PBTimeAndDate.swift in Sources */,
+				F9F4EFF620B75DD900F37484 /* PBWeatherManager.swift in Sources */,
+				F9F4EFFB20B7658B00F37484 /* PbWeather.swift in Sources */,
 				78E163FC1B405BB3008A7CEC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
