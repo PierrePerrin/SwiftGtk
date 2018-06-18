@@ -10,8 +10,6 @@ SGFileManager.ressourceDirectory = NSHomeDirectory() + "/Desktop/monPBRessources
 let app = Application(applicationId: "com.pierre.perrin.monpaperboard")
 app.run { window in
     
-    PBWeatherManager.default.update()
-    
     func prepareWindow(){
         
         let width = 1920/2
